@@ -2210,3 +2210,33 @@ header .btn,
   transform: translateY(-2px) scale(1.02);
   box-shadow: 0 8px 22px rgba(197, 155, 39, 0.4);
 }
+/* Mobile Responsive Styling */
+@media (max-width: 768px) {
+  /* Prevent horizontal scrolling on phones */
+  body, html {
+    overflow-x: hidden;
+    width: 100%;
+  }
+
+  /* Make grid elements stack vertically */
+  .jobs-container, 
+  .grid-container, 
+  .services-grid, 
+  .packages-grid {
+    display: flex !important;
+    flex-direction: column !important;
+    width: 100% !important;
+  }
+
+  /* Adjust navigation bar for smaller screens */
+  nav, .nav-container {
+    flex-direction: column;
+    text-align: center;
+    padding: 10px;
+  }
+
+  /* Adjust headings and text size for readability */
+  h1 { font-size: 1.8rem !important; }
+  h2 { font-size: 1.5rem !important; }
+  p  { font-size: 0.95rem !important; }
+}
